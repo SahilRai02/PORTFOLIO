@@ -1,0 +1,5 @@
+.chrome_profile/
+*.log
+screenshot_*.png
+capture*.js
+fix_pass_2_prompt.txt

@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sahil | AI/ML Engineer</title>
-  <meta name="description" content="Portfolio of Sahil, an AI/ML engineer focused on RAG, LLM and computer vision systems. Pull the trigger on the paper gun to spray work and skills.">
+  <title>Sahil Rai | AI/ML & RAG Engineer</title>
+  <meta name="description" content="Portfolio of Sahil, an AI/ML engineer focused on RAG, LLM and computer vision systems. Pull the trigger on the paper gun to spray work, skills, and credentials.">
   <link rel="canonical" href="https://sahilrai02.github.io/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23e0141c'/></svg>">
   
-  <!-- Open Graph / Twitter Card -->
-  <meta property="og:title" content="Sahil | AI/ML Engineer">
-  <meta property="og:description" content="AI/ML engineer focused on RAG, LLM and computer vision systems. The paper money-gun portfolio.">
+  <!-- Open Graph / WhatsApp / LinkedIn -->
+  <meta property="og:title" content="Sahil Rai | AI/ML & RAG Engineer">
+  <meta property="og:description" content="Portfolio of Sahil, an AI/ML engineer focused on RAG, LLM and computer vision systems. Pull the trigger on the paper gun to spray work, skills, and credentials.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="og.png">
+  <meta property="og:url" content="https://sahilrai02.github.io/">
+  <meta property="og:image" content="assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Sahil Portfolio">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sahil | AI/ML Engineer">
-  <meta name="twitter:description" content="AI/ML engineer focused on RAG, LLM and computer vision systems. The paper money-gun portfolio.">
-  <meta name="twitter:image" content="og.png">
+  <meta name="twitter:title" content="Sahil Rai | AI/ML & RAG Engineer">
+  <meta name="twitter:description" content="Portfolio of Sahil, an AI/ML engineer focused on RAG, LLM and computer vision systems. Pull the trigger on the paper gun to spray work, skills, and credentials.">
+  <meta name="twitter:image" content="assets/og.png">
 
   <!-- Fonts: Clash Display 600, Cabinet Grotesk 400-900, Instrument Serif Italic -->
   <link rel="preconnect" href="https://api.fontshare.com">
@@ -40,9 +47,9 @@
     }
 
     :root {
-      --bg: #FAFAFA;
-      --text: #111111;
-      --muted: #55555c;
+      --bg: #0A0A0C;
+      --text: #F4F4F6;
+      --muted: #A0A0AB;
       --red: #e0141c;
       --red-bright: #ff3b3f;
       --font-display: 'Clash Display', 'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -88,8 +95,8 @@
       left: 14px;
       width: 2px;
       height: 100vh;
-      background: rgba(0, 0, 0, 0.05);
-      border-left: 2px dashed rgba(0, 0, 0, 0.15);
+      background: rgba(255, 255, 255, 0.04);
+      border-left: 2px dashed rgba(255, 255, 255, 0.12);
       z-index: 90;
       pointer-events: none;
     }
@@ -154,61 +161,7 @@
       opacity: 1;
     }
 
-    /* Docked Mini-Gun (replaces reload button) */
-    #mini-gun-dock {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      background: #FFFFFF;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.14), 0 3px 6px rgba(0,0,0,0.06);
-      border: 1px solid rgba(0,0,0,0.08);
-      z-index: 95;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.18s cubic-bezier(0.2, 0.8, 0.3, 1), box-shadow 0.18s ease;
-      touch-action: manipulation;
-    }
-
-    #mini-gun-dock:hover {
-      transform: scale(1.08);
-      box-shadow: 0 16px 32px rgba(180, 20, 25, 0.22);
-    }
-    #mini-gun-dock:active {
-      transform: scale(0.95);
-    }
-
-    #mini-gun-dock .mini-gun-svg {
-      width: 50px;
-      height: auto;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
-      transition: transform 0.05s ease-out;
-    }
-
-    #mini-gun-dock .mini-label {
-      position: absolute;
-      top: -24px;
-      background: #111111;
-      color: #FFFFFF;
-      font-family: var(--font-body);
-      font-weight: 800;
-      font-size: 10px;
-      padding: 2px 8px;
-      border-radius: 10px;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.15s ease, transform 0.15s ease;
-      transform: translateY(4px);
-      white-space: nowrap;
-    }
-    #mini-gun-dock:hover .mini-label, #mini-gun-dock:focus-visible .mini-label {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    /* Mini-gun dock removed per user request */
 
     /* Section wrapper and headings */
     section[id] {
@@ -320,14 +273,14 @@
     }
 
     .keycap-black {
-      background: #111111;
+      background: #18181E;
       color: #FFFFFF;
-      box-shadow: 0 7px 0 #000000, 0 10px 22px rgba(0,0,0,0.22);
-      border-color: #000000;
+      box-shadow: 0 7px 0 #000000, 0 10px 22px rgba(0,0,0,0.6);
+      border-color: rgba(255, 255, 255, 0.15);
     }
     .keycap-black:hover {
-      background: #1f1f23;
-      box-shadow: 0 7px 0 #000000, 0 12px 24px rgba(0,0,0,0.28);
+      background: #22222a;
+      box-shadow: 0 7px 0 #000000, 0 12px 24px rgba(0,0,0,0.7);
     }
     .keycap-black:active, .keycap-black.pressed {
       transform: translateY(5px);
@@ -361,11 +314,11 @@
       padding: 16px 0 12px;
       position: sticky;
       top: 0;
-      background: rgba(250, 250, 250, 0.94);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
+      background: rgba(10, 10, 12, 0.90);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       z-index: 100;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .navbar-inner {
@@ -377,7 +330,7 @@
     .brand-wordmark {
       font-weight: 600;
       font-size: 27px;
-      color: #111111;
+      color: #F4F4F6;
       text-decoration: none;
       width: 112px;
       display: inline-block;
@@ -392,10 +345,10 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      background: rgba(0,0,0,0.035);
+      background: rgba(255, 255, 255, 0.06);
       padding: 4px 6px;
       border-radius: 40px;
-      border: 1px solid rgba(0,0,0,0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .nav-link {
@@ -414,15 +367,15 @@
     }
 
     .nav-link:hover {
-      color: #111111;
-      background: rgba(0,0,0,0.05);
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.08);
       transform: translateY(-1px);
     }
 
     .nav-link.active {
       color: #111111;
       background: #FFFFFF;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
 
     .nav-cta {
@@ -520,7 +473,7 @@
       line-height: 1.02;
       letter-spacing: -0.015em;
       word-spacing: 0.14em;
-      color: #111111;
+      color: var(--text);
       margin-bottom: 16px;
     }
 
@@ -530,7 +483,7 @@
       font-style: italic;
       letter-spacing: normal;
       word-spacing: normal;
-      color: #111111;
+      color: var(--text);
       padding: 0 4px;
     }
 
@@ -570,7 +523,7 @@
     }
 
     .counter-display strong {
-      color: #111111;
+      color: #FFFFFF;
       font-size: 16px;
       font-variant-numeric: tabular-nums;
     }
@@ -625,7 +578,7 @@
       touch-action: none;
       user-select: none;
       -webkit-user-select: none;
-      filter: drop-shadow(0 26px 34px rgba(180, 20, 25, 0.16)) drop-shadow(0 8px 12px rgba(0, 0, 0, 0.07));
+      filter: drop-shadow(0 26px 34px rgba(224, 20, 28, 0.28)) drop-shadow(0 8px 12px rgba(0, 0, 0, 0.5));
       transition: filter 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.3, 1);
       position: sticky;
       top: 96px;
@@ -758,15 +711,31 @@
       display: block;
     }
 
-    /* Tray Slips (Rendered as buttons) */
+    /* Tray Slips (Rendered as buttons or real <a> links) */
     .tray-slip {
       position: absolute;
       height: 58px;
       border-radius: 7px;
       cursor: pointer;
+      pointer-events: auto;
       transition: transform 0.16s cubic-bezier(0.3, 1.4, 0.5, 1), box-shadow 0.16s ease, opacity 0.25s ease;
       z-index: 10;
       transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    a.tray-slip {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      display: flex;
+    }
+
+    .tray-slip:focus-visible, .slip-download-stub:focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: 2px;
+      z-index: 25;
     }
 
     .tray-slip:hover {
@@ -799,6 +768,58 @@
     }
     .tray-slip.slip-tag .slip-word { font-size: 11.5px; }
 
+    /* Small Download Stub for Resume slip */
+    .slip-download-stub {
+      position: absolute;
+      height: 58px;
+      width: 66px;
+      border-radius: 7px;
+      background: #FFFFFF;
+      color: #111111;
+      border: 1px solid #111111;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--font-body);
+      font-weight: 800;
+      text-transform: uppercase;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.09);
+      box-sizing: border-box;
+      padding: 4px 6px;
+      z-index: 10;
+      transform: translate3d(var(--tx, 0), var(--ty, 0), 0);
+      transition: transform 0.16s cubic-bezier(0.3, 1.4, 0.5, 1), box-shadow 0.16s ease, opacity 0.25s ease;
+      pointer-events: auto;
+    }
+
+    .slip-download-stub:hover {
+      transform: translate3d(var(--tx, 0), calc(var(--ty, 0) - 6px), 0);
+      box-shadow: 0 12px 22px rgba(0,0,0,0.13);
+      z-index: 20;
+      background: #FAFAFA;
+    }
+
+    .slip-download-stub .stub-word {
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .slip-download-stub .stub-sub {
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      opacity: 0.8;
+      margin-top: 3px;
+    }
+
     /* Frosted Detail Card (Bottom-Right) */
     .detail-card {
       position: fixed;
@@ -806,13 +827,13 @@
       right: 24px;
       max-width: 420px;
       width: calc(100vw - 48px);
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(20, 20, 24, 0.92);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 18px;
       padding: 22px 24px;
-      box-shadow: 0 20px 42px rgba(0, 0, 0, 0.12), 0 4px 10px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 20px 42px rgba(0, 0, 0, 0.7), 0 4px 10px rgba(0, 0, 0, 0.4);
       z-index: 2000;
       opacity: 0;
       transform: translateY(18px) scale(0.97);
@@ -833,18 +854,18 @@
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background: rgba(0,0,0,0.06);
+      background: rgba(255,255,255,0.1);
       border: none;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       font-size: 16px;
-      color: #333333;
+      color: #F4F4F6;
       transition: background 0.15s ease, transform 0.1s ease;
     }
     .card-close:hover {
-      background: rgba(0,0,0,0.12);
+      background: rgba(255,255,255,0.18);
       transform: scale(1.05);
     }
 
@@ -861,7 +882,7 @@
       font-weight: 600;
       font-size: 22px;
       line-height: 1.15;
-      color: #111111;
+      color: #F4F4F6;
       margin-bottom: 10px;
       padding-right: 28px;
     }
@@ -900,6 +921,14 @@
     .detail-link:hover { background: #242429; }
     .detail-link:active { transform: translateY(3px); box-shadow: 0 1px 0 #000000; }
 
+    .detail-link-secondary {
+      background: rgba(255,255,255,0.08);
+      color: #F4F4F6;
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 4px 0 rgba(255,255,255,0.1);
+    }
+    .detail-link-secondary:hover { background: rgba(255,255,255,0.15); }
+
     /* =========================================================
        SECTION 1: WORK ("Case files")
        A9: no rotation at rest, align-items: start
@@ -919,10 +948,10 @@
     }
 
     .case-card {
-      background: #FFFFFF;
+      background: #141418;
       border-radius: 14px;
-      border: 1px solid rgba(0,0,0,0.08);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05), 0 2px 6px rgba(0,0,0,0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 2px 6px rgba(0,0,0,0.2);
       position: relative;
       cursor: pointer;
       text-align: left;
@@ -934,7 +963,8 @@
     }
 
     .case-card:hover {
-      box-shadow: 0 16px 36px rgba(0,0,0,0.09), 0 4px 10px rgba(0,0,0,0.04);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.5), 0 4px 10px rgba(0,0,0,0.3);
+      border-color: rgba(255, 255, 255, 0.16);
       transform: translateY(-4px) rotate(0.6deg); /* A9: max 0.6deg */
     }
 
@@ -945,7 +975,7 @@
       left: -6px;
       bottom: 0;
       width: 12px;
-      background-image: radial-gradient(circle at 6px 12px, transparent 4.5px, #FFFFFF 5px);
+      background-image: radial-gradient(circle at 6px 12px, transparent 4.5px, #141418 5px);
       background-size: 12px 24px;
       background-repeat: repeat-y;
       z-index: 2;
@@ -953,7 +983,7 @@
 
     .case-header {
       padding: 24px 28px 18px;
-      border-bottom: 1px dashed rgba(0,0,0,0.1);
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
       display: flex;
       justify-content: space-between;
       align-items: baseline;
@@ -974,8 +1004,8 @@
       text-transform: uppercase;
       padding: 4px 9px;
       border-radius: 6px;
-      background: rgba(0,0,0,0.05);
-      color: #111111;
+      background: rgba(255, 255, 255, 0.08);
+      color: #F4F4F6;
     }
 
     .case-body {
@@ -987,7 +1017,7 @@
       font-weight: 600;
       font-size: 26px;
       line-height: 1.15;
-      color: #111111;
+      color: #F4F4F6;
       margin-bottom: 10px;
     }
 
@@ -1012,9 +1042,9 @@
       text-transform: uppercase;
       padding: 4px 10px;
       border-radius: 6px;
-      background: #FAFAFA;
-      border: 1px solid rgba(0,0,0,0.07);
-      color: #333333;
+      background: #1C1C22;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #E2E2E8;
     }
 
     .case-toggle-indicator {
@@ -1032,9 +1062,9 @@
     .case-pipeline-diagram {
       margin: 12px 0 16px;
       padding: 14px 16px;
-      background: #FFFFFF;
+      background: #0D0D10;
       border-radius: 10px;
-      border: 1px solid rgba(0,0,0,0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       overflow-x: auto;
     }
 
@@ -1049,8 +1079,8 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.38s cubic-bezier(0.2, 0.8, 0.25, 1);
-      background: #FAFAFA;
-      border-top: 1px solid rgba(0,0,0,0.06);
+      background: #18181F;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .case-card[aria-expanded="true"] .case-expanded-panel {
@@ -1089,14 +1119,14 @@
     }
 
     .file-row-value {
-      color: #111111;
+      color: #F4F4F6;
       font-weight: 500;
     }
 
     .case-actions {
       margin-top: 10px;
       padding-top: 14px;
-      border-top: 1px dashed rgba(0,0,0,0.1);
+      border-top: 1px dashed rgba(255, 255, 255, 0.1);
       display: flex;
       gap: 12px;
     }
@@ -1119,9 +1149,10 @@
     }
 
     .filter-btn.active {
-      background: #111111;
+      background: var(--red);
       color: #FFFFFF;
-      box-shadow: 0 5px 0 #000000;
+      box-shadow: 0 5px 0 #8f080e;
+      border-color: #8f080e;
     }
 
     .conveyor-belt-wrapper {
@@ -1213,10 +1244,10 @@
        SECTION 3: HOW MY RAG WORKS (B6: Showpiece Redesign)
        ========================================================= */
     .rag-pipeline {
-      background: #FFFFFF;
+      background: #141418;
       border-radius: 20px;
-      border: 1px solid rgba(0,0,0,0.08);
-      box-shadow: 0 16px 38px rgba(0,0,0,0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 16px 38px rgba(0,0,0,0.5);
       padding: 38px 34px;
       position: relative;
     }
@@ -1227,48 +1258,10 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
-    /* B6: Sample Question Pills */
-    .rag-sample-picker {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 1px dashed rgba(0,0,0,0.1);
-    }
-    .rag-sample-label {
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .rag-pill {
-      background: #FAFAFA;
-      border: 1px solid rgba(0,0,0,0.1);
-      border-radius: 20px;
-      padding: 6px 14px;
-      font-family: var(--font-body);
-      font-size: 13px;
-      font-weight: 700;
-      color: #333333;
-      cursor: pointer;
-      transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
-    }
-    .rag-pill:hover {
-      background: #FFFFFF;
-      border-color: #111111;
-      transform: translateY(-1px);
-    }
-    .rag-pill.active {
-      background: #111111;
-      color: #FFFFFF;
-      border-color: #111111;
-    }
+    /* Sample question pills removed per user request */
 
     /* 6 Coloured Slip Tickets with connecting dashed arrows */
     .rag-stations-flow {
@@ -1365,8 +1358,8 @@
 
     /* B6: Interactive Stage Details (Ranked lists, Merge, Rerank, Answer) */
     .rag-stage-visualizer {
-      background: #FAFAFA;
-      border: 1px solid rgba(0,0,0,0.06);
+      background: #0D0D10;
+      border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 12px;
       padding: 16px 20px;
       margin-bottom: 20px;
@@ -1388,9 +1381,10 @@
       border-radius: 6px;
       font-size: 12px;
       font-weight: 800;
-      background: #FFFFFF;
-      border: 1px solid rgba(0,0,0,0.1);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      background: #1C1C22;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #F4F4F6;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
       transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
     }
 
@@ -1403,16 +1397,19 @@
 
     /* Caption 18px with station color left border */
     .rag-caption-card {
-      background: rgba(0,0,0,0.035);
+      background: #18181F;
       border-radius: 12px;
       padding: 20px 24px;
       border-left: 6px solid var(--red);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       min-height: 64px;
       display: flex;
       align-items: center;
-      font-size: 18px; /* B6: 18px text */
+      font-size: 18px;
       line-height: 1.5;
-      color: #222222;
+      color: #F4F4F6;
       font-weight: 600;
       transition: border-color 0.25s ease;
     }
@@ -1435,7 +1432,7 @@
 
     .receipt-card {
       background: #FFFFFF;
-      box-shadow: 0 16px 36px rgba(0,0,0,0.08), 0 3px 8px rgba(0,0,0,0.04);
+      box-shadow: 0 20px 48px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.06);
       padding: 34px 30px;
       font-family: var(--font-body);
       position: relative;
@@ -1559,7 +1556,7 @@
     .about-narrative {
       font-size: 17px;
       line-height: 1.65;
-      color: #333333;
+      color: #E2E2E6;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -1673,7 +1670,7 @@
       text-decoration: none;
       font-weight: 700;
     }
-    footer.site-footer a:hover { color: #111111; }
+    footer.site-footer a:hover { color: #FFFFFF; }
 
     .egg-hint {
       display: inline-flex;
@@ -1722,21 +1719,7 @@
   <!-- Toast for Easter Egg -->
   <div id="egg-toast" role="alert" aria-live="assertive">You found it.</div>
 
-  <!-- B1: Docked Mini-Gun (bottom-right) -->
-  <button type="button" id="mini-gun-dock" aria-label="Reload and fire paper gun">
-    <span class="mini-label">Reload ⏎</span>
-    <svg class="mini-gun-svg" viewBox="0 0 820 540" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <polygon points="510,270 560,250 635,465 595,485" fill="#8f080e" />
-      <polygon points="440,290 510,270 595,485 520,500" fill="#d9121a" />
-      <path d="M 330,290 C 330,370 410,380 445,340 L 445,290" fill="none" stroke="#a50a10" stroke-width="20" stroke-linecap="round" />
-      <path d="M 382,286 C 392,330 368,354 354,360 C 364,350 374,324 368,286 Z" fill="#ff4d52" />
-      <polygon points="690,130 755,85 755,205 690,265" fill="#7d050a" />
-      <polygon points="120,85 690,130 755,85 185,45" fill="#ff4a4e" />
-      <polygon points="120,85 690,130 690,265 120,220" fill="#e0141c" />
-      <polygon points="55,125 120,85 120,220 55,260" fill="#a50a10" />
-      <polygon points="68,145 92,130 92,205 68,220" fill="#140103" />
-    </svg>
-  </button>
+  
 
   <!-- Navigation Bar -->
   <header class="navbar" role="banner">
@@ -1906,6 +1889,9 @@
     <div id="card-footer" class="card-footer">
       <a id="card-link" href="" target="_blank" rel="noopener noreferrer" class="detail-link">
         Open ↗
+      </a>
+      <a id="card-download" href="" download class="detail-link detail-link-secondary" style="display: none; margin-left: 10px;">
+        Download ↓
       </a>
     </div>
   </aside>
@@ -2262,14 +2248,6 @@
       <p class="section-subtext">A simplified view of the RAG pipeline I use. Illustrative example. Not a live bot.</p>
 
       <div class="rag-pipeline">
-        
-        <!-- Sample Question Selector -->
-        <div class="rag-sample-picker">
-          <span class="rag-sample-label">Sample Query:</span>
-          <button type="button" class="rag-pill active" data-query="What does the company sell?">What does the company sell?</button>
-          <button type="button" class="rag-pill" data-query="Where is the support page?">Where is the support page?</button>
-          <button type="button" class="rag-pill" data-query="How do I contact sales?">How do I contact sales?</button>
-        </div>
 
         <div class="rag-controls">
           <button type="button" id="rag-run-btn" class="keycap-btn keycap-red" aria-label="Ask a question and run RAG simulation">
@@ -2501,7 +2479,7 @@
             Copy email <span class="legend">📋</span>
           </button>
 
-          <a href="https://linkedin.com/in/sahil-rai-524080274" target="_blank" rel="noopener noreferrer" class="keycap-btn keycap-white" aria-label="Open Sahil's LinkedIn profile">
+          <a href="https://www.linkedin.com/in/sahil-rai-524080274" target="_blank" rel="noopener noreferrer" class="keycap-btn keycap-white" aria-label="Open Sahil's LinkedIn profile">
             LinkedIn ↗
           </a>
 
@@ -2509,7 +2487,13 @@
             GitHub ↗
           </a>
 
-          <!-- [REPLACE: PDF link] - hidden since link is not provided -->
+          <a href="assets/Sahil_Rai_Resume.pdf" target="_blank" rel="noopener noreferrer" class="keycap-btn keycap-white" aria-label="Open Sahil's Resume PDF in new tab">
+            Resume ↗
+          </a>
+
+          <a href="assets/Sahil_Rai_Resume.pdf" download="Sahil_Rai_Resume.pdf" class="keycap-btn keycap-white" aria-label="Download Sahil's Resume PDF">
+            Download ↓
+          </a>
         </div>
       </div>
 
@@ -2554,7 +2538,11 @@
       { bg: '#ffffff', text: '#111111', isWhite: true  }  // white (1px #111 border)
     ];
 
-    let colorAssignmentMap = new Map();
+    let colorAssignmentMap = new Map([
+      ['contact-linkedin', { bg: '#3f6bff', text: '#ffffff', isWhite: false }], // blue
+      ['contact-github',   { bg: '#1c1c22', text: '#ffffff', isWhite: false }], // black
+      ['contact-resume',   { bg: '#3fe0a8', text: '#111111', isWhite: false }]  // mint
+    ]);
     let nextColorIndex = 0;
 
     function getSlipColor(id) {
@@ -2673,53 +2661,57 @@
       }
     ];
 
-    // Big slips: Contact
-    const CONTACT_SLIPS = [
-      {
-        id: 'contact-hello',
-        category: 'contact',
-        isTag: false,
-        word: 'HELLO@',
-        subline: 'Email me',
-        kicker: 'Contact · Direct Email',
-        title: 'Let’s Get In Touch',
-        detail: 'Email directly at sahil02rai@gmail.com for full-time opportunities or technical discussions.',
-        link: 'mailto:sahil02rai@gmail.com'
-      },
-      {
-        id: 'contact-linkedin',
-        category: 'contact',
-        isTag: false,
-        word: 'LINKEDIN',
-        subline: 'Connect',
-        kicker: 'Social · LinkedIn',
-        title: 'Sahil Rai on LinkedIn',
-        detail: 'Connect with Sahil on LinkedIn to view recommendations, network and updates.',
-        link: 'https://linkedin.com/in/sahil-rai-524080274'
-      },
-      {
-        id: 'contact-github',
-        category: 'contact',
-        isTag: false,
-        word: 'GITHUB',
-        subline: 'SahilRai02',
-        kicker: 'Code · GitHub',
-        title: 'GitHub Repositories',
-        detail: 'Explore open-source deep learning models, RAG implementations, and repositories.',
-        link: 'https://github.com/SahilRai02'
-      },
-      {
-        id: 'contact-resume',
-        category: 'contact',
-        isTag: false,
-        word: 'RESUME',
-        subline: 'PDF',
-        kicker: 'Resume · CV',
-        title: 'Curriculum Vitae',
-        detail: 'Updated resume detailing AI/ML projects, skills, education, and internship experience.',
-        link: null
-      }
-    ];
+    // Big slips: Contact & Outbound Links
+    const CONTACT_HELLO_SLIP = {
+      id: 'contact-hello',
+      category: 'contact',
+      isTag: false,
+      word: 'HELLO@',
+      subline: 'Email me',
+      kicker: 'Contact · Direct Email',
+      title: 'Let’s Get In Touch',
+      detail: 'Email directly at sahil02rai@gmail.com for full-time opportunities or technical discussions.',
+      link: 'mailto:sahil02rai@gmail.com'
+    };
+
+    const LINKEDIN_SLIP = {
+      id: 'contact-linkedin',
+      category: 'contact',
+      isTag: false,
+      word: 'LINKEDIN',
+      subline: 'Connect ↗',
+      kicker: 'Social · LinkedIn',
+      title: 'Sahil Rai on LinkedIn',
+      detail: 'Connect with Sahil on LinkedIn to view recommendations, network, and updates.',
+      link: 'https://www.linkedin.com/in/sahil-rai-524080274'
+    };
+
+    const GITHUB_SLIP = {
+      id: 'contact-github',
+      category: 'contact',
+      isTag: false,
+      word: 'GITHUB',
+      subline: 'SahilRai02 ↗',
+      kicker: 'Code · GitHub',
+      title: 'GitHub Repositories',
+      detail: 'Explore open-source deep learning models, RAG implementations, and repositories.',
+      link: 'https://github.com/SahilRai02'
+    };
+
+    const RESUME_SLIP = {
+      id: 'contact-resume',
+      category: 'contact',
+      isTag: false,
+      word: 'RESUME',
+      subline: 'View PDF ↗',
+      kicker: 'Resume · CV',
+      title: 'Curriculum Vitae',
+      detail: 'Updated AI/ML resume: RAG pipelines, computer vision research paper, Navsoft internship, and technical skills.',
+      link: 'assets/Sahil_Rai_Resume.pdf',
+      hasDownload: true
+    };
+
+    const CONTACT_SLIPS = [CONTACT_HELLO_SLIP, LINKEDIN_SLIP, GITHUB_SLIP, RESUME_SLIP];
 
     // B4: NOW Slip
     const NOW_SLIP = {
@@ -2758,8 +2750,19 @@
       link: null
     }));
 
-    // Combined all big slips including NOW slip
-    const ALL_BIG_SLIPS = [NOW_SLIP, ...PROJECT_SLIPS, ...ABOUT_SLIPS, ...CONTACT_SLIPS];
+    // Gun Firing Order: LINKEDIN, GITHUB, and RESUME fire in initial burst and land in tray
+    const ALL_BIG_SLIPS = [
+      NOW_SLIP,
+      LINKEDIN_SLIP,
+      PROJECT_SLIPS[0], // CODEBASE
+      GITHUB_SLIP,
+      PROJECT_SLIPS[1], // ANOMALY
+      RESUME_SLIP,
+      PROJECT_SLIPS[2], // WEB CHATBOT
+      PROJECT_SLIPS[3], // PUBLISHED
+      ...ABOUT_SLIPS,
+      CONTACT_HELLO_SLIP
+    ];
 
     // State
     let totalSprayed = 0;
@@ -2785,8 +2788,7 @@
     const sprayCounter = document.getElementById('spray-counter');
     const trayContainer = document.getElementById('tray-container');
     const flightLayer = document.getElementById('flight-layer');
-    const miniGunDock = document.getElementById('mini-gun-dock');
-    const paperTrailFill = document.getElementById('paper-trail-fill');
+        const paperTrailFill = document.getElementById('paper-trail-fill');
     const paperTrailLabel = document.getElementById('paper-trail-label');
     const eggToast = document.getElementById('egg-toast');
     const contactWatermark = document.getElementById('contact-watermark');
@@ -2798,6 +2800,7 @@
     const cardTitle = document.getElementById('card-title');
     const cardBody = document.getElementById('card-body');
     const cardLink = document.getElementById('card-link');
+    const cardDownload = document.getElementById('card-download');
 
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -2834,9 +2837,21 @@
         cardLink.href = slipData.link;
         cardLink.style.display = 'inline-flex';
         cardLink.setAttribute('aria-label', `Open ${slipData.title}`);
+        
+        if (slipData.hasDownload) {
+          cardLink.textContent = 'Open PDF ↗';
+          cardDownload.href = slipData.link;
+          cardDownload.setAttribute('download', 'Sahil_Rai_Resume.pdf');
+          cardDownload.style.display = 'inline-flex';
+          cardDownload.setAttribute('aria-label', `Download ${slipData.title}`);
+        } else {
+          cardLink.textContent = 'Open ↗';
+          cardDownload.style.display = 'none';
+        }
       } else {
         cardLink.removeAttribute('href');
         cardLink.style.display = 'none';
+        cardDownload.style.display = 'none';
       }
 
       detailCard.classList.add('active');
@@ -2852,16 +2867,9 @@
     });
 
     /**
-     * Launch Origin Calculation (Main Gun & Mini-Gun)
+     * Launch Origin Calculation
      */
-    function getSlotLaunchOrigin(useMiniGun = false) {
-      if (useMiniGun && miniGunDock) {
-        const rect = miniGunDock.getBoundingClientRect();
-        return {
-          x: rect.left + rect.width * 0.3,
-          y: rect.top + rect.height * 0.3
-        };
-      }
+    function getSlotLaunchOrigin() {
       const wrapRect = gunWrapper.getBoundingClientRect();
       if (gunSlotPoly) {
         const rect = gunSlotPoly.getBoundingClientRect();
@@ -2881,15 +2889,7 @@
     /**
      * Gun Recoil Kick
      */
-    function triggerGunKick(useMiniGun = false) {
-      if (useMiniGun && miniGunDock) {
-        const svg = miniGunDock.querySelector('.mini-gun-svg');
-        if (svg) {
-          svg.style.transform = 'translate(-6px, -4px) scale(0.95)';
-          setTimeout(() => { svg.style.transform = 'none'; }, 80);
-        }
-        return;
-      }
+    function triggerGunKick() {
 
       const kickX = 14 * Math.cos(-16 * Math.PI / 180 + Math.PI);
       const kickY = 14 * Math.sin(-16 * Math.PI / 180 + Math.PI);
@@ -2919,22 +2919,24 @@
       let rowHeight = height;
 
       traySlips.forEach(item => {
-        const slipWidth = item.data.isTag ? 92 : 152;
+        const baseWidth = item.data.isTag ? 92 : (item.data.hasDownload ? 116 : 152);
+        const extraWidth = item.downloadEl ? (item.downloadWidth + 6) : 0;
+        const totalSlipGroupWidth = baseWidth + extraWidth;
 
-        if (currentX + slipWidth > containerWidth && currentX > 0) {
+        if (currentX + totalSlipGroupWidth > containerWidth && currentX > 0) {
           currentX = 0;
           currentY += rowHeight + gap;
         }
 
         item.x = currentX;
         item.y = currentY;
-        item.width = slipWidth;
+        item.width = baseWidth;
         item.height = height;
 
         if (item.element) {
           item.element.style.setProperty('--tx', `${currentX}px`);
           item.element.style.setProperty('--ty', `${currentY}px`);
-          item.element.style.width = `${slipWidth}px`;
+          item.element.style.width = `${baseWidth}px`;
           item.element.style.height = `${height}px`;
 
           const word = item.element.querySelector('.slip-word');
@@ -2942,7 +2944,15 @@
           fitTextToWidth(word, maxSz, 11);
         }
 
-        currentX += slipWidth + gap;
+        if (item.downloadEl) {
+          const dlX = currentX + baseWidth + 6;
+          item.downloadEl.style.setProperty('--tx', `${dlX}px`);
+          item.downloadEl.style.setProperty('--ty', `${currentY}px`);
+          item.downloadEl.style.width = `${item.downloadWidth}px`;
+          item.downloadEl.style.height = `${height}px`;
+        }
+
+        currentX += totalSlipGroupWidth + gap;
       });
 
       const totalHeight = traySlips.length > 0 ? currentY + rowHeight : 0;
@@ -2962,43 +2972,76 @@
         existing.element.classList.remove('hop');
         void existing.element.offsetWidth;
         existing.element.classList.add('hop');
+        if (existing.downloadEl) {
+          existing.downloadEl.classList.remove('hop');
+          void existing.downloadEl.offsetWidth;
+          existing.downloadEl.classList.add('hop');
+        }
         return { isNew: false, targetItem: existing };
       }
 
       const color = getSlipColor(slipData.id);
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = `slip tray-slip ${slipData.isTag ? 'slip-tag' : 'slip-big'} ${color.isWhite ? 'has-border' : ''}`;
-      btn.style.backgroundColor = color.bg;
-      btn.style.color = color.text;
-      btn.setAttribute('tabindex', '0');
-      btn.setAttribute('role', 'button');
-      btn.setAttribute('aria-label', `${slipData.title || slipData.word}. Click for details.`);
+      const isLink = Boolean(slipData.link && !slipData.link.includes('[REPLACE]'));
+      
+      const el = document.createElement(isLink ? 'a' : 'button');
+      if (isLink) {
+        el.href = slipData.link;
+        if (!slipData.link.startsWith('mailto:')) {
+          el.target = '_blank';
+          el.rel = 'noopener noreferrer';
+        }
+        el.setAttribute('title', `Open ${slipData.title || slipData.word} (click to open in new tab)`);
+      } else {
+        el.type = 'button';
+      }
+
+      el.className = `slip tray-slip ${slipData.isTag ? 'slip-tag' : 'slip-big'} ${color.isWhite ? 'has-border' : ''}`;
+      el.style.backgroundColor = color.bg;
+      el.style.color = color.text;
+      el.setAttribute('tabindex', '0');
+      el.setAttribute('role', isLink ? 'link' : 'button');
+      el.setAttribute('aria-label', `${slipData.title || slipData.word}. ${isLink ? 'Click to open link.' : 'Click for details.'}`);
 
       const wordSpan = document.createElement('span');
       wordSpan.className = 'slip-word';
       wordSpan.textContent = slipData.word;
-      btn.appendChild(wordSpan);
+      el.appendChild(wordSpan);
 
       if (!slipData.isTag && slipData.subline) {
         const subSpan = document.createElement('span');
         subSpan.className = 'slip-sub';
         subSpan.innerHTML = slipData.subline;
-        btn.appendChild(subSpan);
+        el.appendChild(subSpan);
       }
 
-      btn.addEventListener('click', () => {
+      // Show detail card on click / tap (does not prevent normal link navigation)
+      el.addEventListener('click', () => {
         showDetailCard(slipData);
       });
 
-      trayContainer.appendChild(btn);
+      trayContainer.appendChild(el);
+
+      let downloadStub = null;
+      if (slipData.hasDownload) {
+        downloadStub = document.createElement('a');
+        downloadStub.href = slipData.link;
+        downloadStub.setAttribute('download', 'Sahil_Rai_Resume.pdf');
+        downloadStub.className = 'slip-download-stub';
+        downloadStub.setAttribute('title', 'Download Sahil Rai Resume PDF');
+        downloadStub.setAttribute('aria-label', 'Download Sahil Rai Resume PDF');
+        downloadStub.setAttribute('tabindex', '0');
+        downloadStub.innerHTML = '<span class="stub-word">PDF ↓</span><span class="stub-sub">Download</span>';
+        trayContainer.appendChild(downloadStub);
+      }
 
       const newItem = {
         data: slipData,
-        element: btn,
+        element: el,
+        downloadEl: downloadStub,
         x: 0,
         y: 0,
-        width: slipData.isTag ? 92 : 152,
+        width: slipData.isTag ? 92 : (slipData.hasDownload ? 116 : 152),
+        downloadWidth: slipData.hasDownload ? 66 : 0,
         height: 58
       };
 
@@ -3017,6 +3060,10 @@
         if (item.element) {
           item.element.style.opacity = '0';
           item.element.style.transform = `translate3d(${item.x}px, ${item.y + 12}px, 0) scale(0.9)`;
+        }
+        if (item.downloadEl) {
+          item.downloadEl.style.opacity = '0';
+          item.downloadEl.style.transform = `translate3d(${item.x + item.width + 6}px, ${item.y + 12}px, 0) scale(0.9)`;
         }
       });
 
@@ -3073,9 +3120,9 @@
       const maxWordSz = slipData.isTag ? 12 : (slipData.word.length > 9 ? 24 : 28);
       fitTextToWidth(wordSpan, maxWordSz, 11);
 
-      const origin = options.origin || getSlotLaunchOrigin(options.fromMiniGun);
+      const origin = options.origin || getSlotLaunchOrigin();
 
-      const angleDeg = options.isConfetti ? (220 + Math.random() * 100) : (options.fromMiniGun ? (200 + Math.random() * 40) : (150 + Math.random() * 40));
+      const angleDeg = options.isConfetti ? (220 + Math.random() * 100) : (150 + Math.random() * 40);
       const angleRad = angleDeg * Math.PI / 180;
       const speed = options.isConfetti ? (14 + Math.random() * 12) : (12 + Math.random() * 10);
 
@@ -3113,7 +3160,7 @@
 
       activeFlyingSlips.push(flightState);
       if (!options.isConfetti) {
-        triggerGunKick(options.fromMiniGun);
+        triggerGunKick();
       }
     }
 
@@ -3195,8 +3242,9 @@
             slip.targetX = trayRect.left + slip.targetItem.x;
             slip.targetY = trayRect.top + slip.targetItem.y;
 
-            if (slip.isNew && slip.targetItem.element) {
-              slip.targetItem.element.style.opacity = '0';
+            if (slip.isNew && slip.targetItem) {
+              if (slip.targetItem.element) slip.targetItem.element.style.opacity = '0';
+              if (slip.targetItem.downloadEl) slip.targetItem.downloadEl.style.opacity = '0';
             }
           }
 
@@ -3235,12 +3283,18 @@
           slip.element.style.transform = `translate3d(${curX}px, ${curY}px, 0) rotateZ(${curRotZ}deg) rotateX(${curRotX}deg)`;
 
           if (t >= 1) {
-            if (slip.isNew && slip.targetItem && slip.targetItem.element) {
-              slip.targetItem.element.style.opacity = '1';
+            if (slip.isNew && slip.targetItem) {
+              if (slip.targetItem.element) slip.targetItem.element.style.opacity = '1';
+              if (slip.targetItem.downloadEl) slip.targetItem.downloadEl.style.opacity = '1';
             } else if (!slip.isNew && slip.targetItem) {
               slip.targetItem.element.classList.remove('hop');
               void slip.targetItem.element.offsetWidth;
               slip.targetItem.element.classList.add('hop');
+              if (slip.targetItem.downloadEl) {
+                slip.targetItem.downloadEl.classList.remove('hop');
+                void slip.targetItem.downloadEl.offsetWidth;
+                slip.targetItem.downloadEl.classList.add('hop');
+              }
             }
 
             slip.element.remove();
@@ -3405,12 +3459,7 @@
       });
     });
 
-    /**
-     * B1: Docked Mini-Gun Actions
-     */
-    miniGunDock.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      let count = 0;
+          let count = 0;
       const burstTimer = setInterval(() => {
         spawnFlyingSlip(getNextSlip());
         count++;
@@ -3461,26 +3510,7 @@
 
     navSections.forEach(s => observer.observe(s));
 
-    /**
-     * B1: SECTIONS FLY OUT OF MINI-GUN ON REVEAL
-     */
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const sectionId = entry.target.getAttribute('id');
-          if (sectionId && sectionId !== 'hero') {
-            // Launch a subtle staggered flyer from mini gun
-            if (!prefersReducedMotion.matches && entry.boundingClientRect.top > 0) {
-              const flyerSlip = (sectionId === 'work' ? PROJECT_SLIPS[0] : (sectionId === 'skills' ? SKILL_SLIPS[0] : ABOUT_SLIPS[0]));
-              spawnFlyingSlip(flyerSlip, { fromMiniGun: true, noTray: true, noCount: true });
-            }
-          }
-          sectionObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    navSections.forEach(s => sectionObserver.observe(s));
+    // Scroll reveal flyers removed per user request
 
     /**
      * SECTION 1: WORK CASE FILE ACCORDION
@@ -3620,14 +3650,7 @@
       });
     });
 
-    // Pill Selector
-    document.querySelectorAll('.rag-pill').forEach(pill => {
-      pill.addEventListener('click', () => {
-        document.querySelectorAll('.rag-pill').forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        activateRagStation(0);
-      });
-    });
+    // Pill selector removed
 
     ragRunBtn.addEventListener('click', () => {
       let step = 0;
@@ -3719,25 +3742,32 @@
       computeTrayLayout();
 
       document.fonts.ready.then(() => {
-        // Gun drops in with bounce
-        if (!prefersReducedMotion.matches) {
+        if (prefersReducedMotion.matches) {
+          // Respect prefers-reduced-motion: no firing animation, just show the slips in the tray
+          for (let count = 0; count < 20; count++) {
+            addOrHopInTray(getNextSlip());
+          }
+          totalSprayed = 20;
+          sprayCounter.innerHTML = `<strong>${totalSprayed}</strong> slips sprayed`;
+        } else {
+          // Gun drops in with bounce
           gunWrapper.style.transform = 'translateY(-24px) rotate(-16deg)';
           setTimeout(() => {
             gunWrapper.style.transform = 'translateY(0px) rotate(-16deg)';
             triggerGunKick();
           }, 350);
-        }
 
-        setTimeout(() => {
-          let count = 0;
-          const initialBurstInterval = setInterval(() => {
-            spawnFlyingSlip(getNextSlip());
-            count++;
-            if (count >= 20) {
-              clearInterval(initialBurstInterval);
-            }
-          }, 95);
-        }, 650);
+          setTimeout(() => {
+            let count = 0;
+            const initialBurstInterval = setInterval(() => {
+              spawnFlyingSlip(getNextSlip());
+              count++;
+              if (count >= 20) {
+                clearInterval(initialBurstInterval);
+              }
+            }, 95);
+          }, 650);
+        }
       });
     });
 
