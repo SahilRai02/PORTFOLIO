@@ -3459,14 +3459,6 @@
       });
     });
 
-          let count = 0;
-      const burstTimer = setInterval(() => {
-        spawnFlyingSlip(getNextSlip());
-        count++;
-        if (count >= 10) clearInterval(burstTimer);
-      }, 95);
-    });
-
     /**
      * Scroll Progress & B11 Current Section Tag
      */
@@ -3613,7 +3605,7 @@
     const ragCaptionBox = document.getElementById('rag-caption-box');
     const ragRunBtn = document.getElementById('rag-run-btn');
     const ragRunner = document.getElementById('rag-runner');
-    const ragVisualizer = document.getElementById('stage-doc-container');
+    const ragVisualizer = document.getElementById('rag-visualizer');
 
     function activateRagStation(stepIndex) {
       ragStations.forEach((s, idx) => {
@@ -3632,7 +3624,9 @@
       const stCol = ragStations[stepIndex].style.backgroundColor;
       ragCaptionBox.style.borderLeftColor = stCol;
       ragCaptionBox.textContent = RAG_CAPTIONS[stepIndex] || '';
-      ragVisualizer.parentElement.innerHTML = STAGE_VISUALS[stepIndex] || '';
+      if (ragVisualizer) {
+        ragVisualizer.innerHTML = STAGE_VISUALS[stepIndex] || '';
+      }
 
       const target = ragStations[stepIndex];
       if (target && !prefersReducedMotion.matches) {
